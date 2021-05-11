@@ -1,17 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using MovieRentals.Models;
+using MovieRentals.ViewModels;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace MovieRentals.Controllers
 {
     public class GigsController : Controller
     {
+
+        private ApplicationDbContext _context;
+
+        public GigsController()
+        {
+            _context = new ApplicationDbContext();
+        }
+
         // GET: Gigs
         public ActionResult Create()
         {
-            return View();
+            var viewModel = new GigFormViewModel
+            {
+                Genres = _context.Genres.ToList()
+            };
+            return View(viewModel);
         }
     }
 }
