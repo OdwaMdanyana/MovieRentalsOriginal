@@ -8,7 +8,7 @@ namespace MovieRentals.Controllers
     public class GigsController : Controller
     {
 
-        private ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
 
         public GigsController()
         {
