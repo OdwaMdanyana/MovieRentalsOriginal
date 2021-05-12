@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNet.Identity;
 using MovieRentals.Models;
 using MovieRentals.ViewModels;
-using System;
 using System.Linq;
 using System.Web.Mvc;
 
@@ -34,7 +33,7 @@ namespace MovieRentals.Controllers
             var gig = new Gig
             {
                 ArtistId = User.Identity.GetUserId(),
-                DateTime = DateTime.Parse($"{viewModel.Date} {viewModel.Time}"),
+                DateTime = viewModel.DateTime,
                 GenreId = (byte)viewModel.Genre,
                 Venue = viewModel.Venue
             };
