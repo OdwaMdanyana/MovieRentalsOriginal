@@ -22,3 +22,77 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*
+    Override default styles
+*/
+
+.navbar-inverse {
+background-color: #362942 !important;
+border-color: #080808 !important;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: aquamarine !important;
+}
+
+.navbar-inverse .navbar-brand {
+    color: aquamarine !important;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #362942 !important;
+    background-color: #7fffd4 !important;
+    background-color: rgba(127,255,212, 0.5) !important;
+        -ms-transition: 200ms;
+        -o-transition: 200ms;
+        -webkit-transition: 200ms;
+        transition: 200ms;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #40c242;
+    background-color: aquamarine !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.dropdown-menu {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+body {
+    font-size: 17px;
+}
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+.form-group {
+    margin-bottom: 20px !important;
+}
+
+.form-control {
+    font-size: 17px!important;
+    padding: 20px 15px !important;
+    -ms-border-radius: 9px;
+    border-radius: 9px;
+}
+
+.form-control:focus {
+border-color: #362942 !important;
+box-shadow: none;
+-webkit-box-shadow: none;
+}
+.btn {
+    font-size: 17px !important;
+    padding: 7px 20px !important;
+    -ms-border-radius: 9px ;
+    border-radius: 9px !important;
+    color: aquamarine !important;
+    background-color: #362942;
+}
+
