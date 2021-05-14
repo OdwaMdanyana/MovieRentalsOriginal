@@ -7,6 +7,7 @@ namespace MovieRentals.ViewModels
 {
     public class GigFormViewModel
     {
+
         [Required]
         public string Venue { get; set; }
 

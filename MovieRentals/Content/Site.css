@@ -90,10 +90,15 @@ box-shadow: none;
 .btn {
     font-size: 17px !important;
     padding: 7px 20px !important;
-    -ms-border-radius: 9px ;
+    -ms-border-radius: 9px;
     border-radius: 9px !important;
+    color: #362942 !important;
+    background-color: aquamarine !important;
+}
+
+.btn-default:hover {
     color: aquamarine !important;
-    background-color: #362942;
+    background-color: #362942 !important;
 }
 
 .field-validation-error {
