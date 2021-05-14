@@ -96,3 +96,7 @@ box-shadow: none;
     background-color: #362942;
 }
 
+.field-validation-error {
+    color: red;
+    font-weight: bold;
+}
